@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Inventory-Builder | iSystem Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-box h3 {
+            margin-top: 0;
+        }
+        
+        .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            margin-top: 40px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Smart-Inventory-Builder</h1>
+            <p>Enterprise-Grade Inventory Management Solution</p>
+            <div style="margin-top: 20px;">
+                <span class="badge">Google Apps Script</span>
+                <span class="badge">Production Ready</span>
+                <span class="badge">Proprietary License</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <h2>🎯 Project Overview</h2>
+            <p>
+                Smart-Inventory-Builder is a fully featured inventory automation platform engineered by 
+                <strong>iSystem Development</strong> for <strong>GSL Power Ltd</strong>. Built on Google Sheets 
+                and Google Apps Script, it provides comprehensive inventory management capabilities with 
+                enterprise-level integrations.
+            </p>
+            
+            <div class="warning">
+                <strong>⚠️ Note:</strong> This is a public portfolio showcase. The repository contains only 
+                sanitized source code and documentation. No real credentials, sensitive business data, or 
+                proprietary configurations are included.
+            </div>
+            
+            <h2>✨ Key Features</h2>
+            <div class="features">
+                <div class="feature-box">
+                    <h3>📄 PDF Invoice OCR</h3>
+                    <p>Extract supplier details, items, and pricing from PDF invoices using Google Vision API v3</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3>💼 QuickBooks Integration</h3>
+                    <p>OAuth 2.0 authentication, direct invoice import, and line item extraction</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3>💰 Price Monitoring</h3>
+                    <p>Track and alert price changes across competitors using BrowseAI integration</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3>🏷️ QR Code Labeling</h3>
+                    <p>Generate, store, and print QR codes for SKU labels via PrintNode and Brother QL-820NWB</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3>🔍 Duplicate Detection</h3>
+                    <p>Multi-level checks using SKU, MPN, and fuzzy matching algorithms</p>
+                </div>
+                
+                <div class="feature-box">
+                    <h3>🔄 Automated Workflows</h3>
+                    <p>Status management: Pending → Reviewed → Approved → Added</p>
+                </div>
+            </div>
+            
+            <h2>📁 Repository Architecture</h2>
+            <p>This project uses a <strong>dual-repository SSOT</strong> (Single Source of Truth) approach:</p>
+            <ul>
+                <li><strong>Private Repository (SSOT):</strong> Production code, real secrets, and internal documentation</li>
+                <li><strong>Public Repository (Portfolio):</strong> Sanitized code, example configurations, and public documentation</li>
+            </ul>
+            <p>Sanitization is fully automated using GitHub Actions to ensure security and compliance.</p>
+            
+            <h2>🚀 Technology Stack</h2>
+            <ul>
+                <li><strong>Platform:</strong> Google Apps Script</li>
+                <li><strong>OCR:</strong> Google Vision API v3</li>
+                <li><strong>Accounting:</strong> QuickBooks API (OAuth 2.0)</li>
+                <li><strong>Price Monitoring:</strong> BrowseAI</li>
+                <li><strong>Printing:</strong> PrintNode, Brother QL-820NWB</li>
+                <li><strong>Automation:</strong> GitHub Actions</li>
+            </ul>
+            
+            <h2>📖 Documentation</h2>
+            <p>Comprehensive documentation is available in the repository:</p>
+            <ul>
+                <li><code>SETUP.md</code> - Public setup guide</li>
+                <li><code>SSOT.md</code> - Dual-repository architecture</li>
+                <li><code>WORKFLOWS.md</code> - Automated workflow examples</li>
+                <li><code>API.md</code> - Public API reference</li>
+                <li><code>CONFIG.md</code> - Configuration options (examples only)</li>
+                <li><code>OCR.md</code> - PDF OCR processing guide</li>
+                <li><code>SKU_QR_EXAMPLES.md</code> - SKU & QR code generation samples</li>
+            </ul>
+            
+            <h2>🔐 Security & Licensing</h2>
+            <ul>
+                <li>All real secrets, API keys, and business data are <strong>excluded</strong> from the public repository</li>
+                <li>Proprietary license - see <a href="https://github.com/iSystemDevelopment/smart-inventory-builder/blob/main/LICENSE" target="_blank">LICENSE</a></li>
+                <li>Dual-repo architecture ensures customer and production data remain private</li>
+                <li>Licensed exclusively to GSL Power Ltd by iSystem Development</li>
+            </ul>
+            
+            <div class="links">
+                <a href="https://github.com/iSystemDevelopment/smart-inventory-builder" class="btn" target="_blank">
+                    View on GitHub
+                </a>
+                <a href="https://github.com/iSystemDevelopment/smart-inventory-builder#readme" class="btn btn-secondary" target="_blank">
+                    Read Documentation
+                </a>
+                <a href="../" class="btn btn-secondary">
+                    Back to Home
+                </a>
+            </div>
+            
+            <h2>🤝 Contact & Support</h2>
+            <ul>
+                <li><strong>Developer:</strong> iSystem Development</li>
+                <li><strong>Client:</strong> GSL Power Ltd</li>
+                <li><strong>Contact:</strong> <a href="mailto:administrator@gslpower.io">administrator@gslpower.io</a></li>
+            </ul>
+            
+            <h2>🏆 Credits</h2>
+            <p>
+                Built for <strong>GSL Power Ltd</strong> (Stage Lighting, Dimmers, Power Distribution, Electronics Repair)<br>
+                Developed by <strong>iSystem Development</strong>
+            </p>
+        </div>
+        
+        <footer>
+            <p><strong>Copyright © 2024–2025 iSystem Development</strong> | All rights reserved</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                This repository is for demonstration, technical review, and portfolio purposes only.<br>
+                Deployment, production use, or adaptation requires a proprietary license.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
