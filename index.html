@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSystem Development - Support & FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>iSystem Development</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>Welcome to iSystem Development</h2>
+            <p>Your trusted partner for system development solutions</p>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What services does iSystem Development provide?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide comprehensive system development services including custom software development, cloud solutions, infrastructure management, and technical consulting.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I get technical support?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can reach our support team through the chatbot on this page, email us at support@isystem.dev, or call us during business hours. Our chatbot is available 24/7 for immediate assistance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your business hours?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our business hours are Monday to Friday, 9:00 AM to 6:00 PM (EST). However, our chatbot support is available 24/7 to answer your questions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer custom development solutions?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we specialize in custom development solutions tailored to your specific needs. Contact us through the chatbot or our support channels to discuss your project requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What technologies do you work with?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We work with a wide range of technologies including Python, JavaScript, Node.js, React, Vue.js, Docker, Kubernetes, AWS, Azure, and many more. Our team stays current with the latest industry trends and best practices.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I start a project with iSystem Development?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Starting a project is easy! Click on the chatbot icon to speak with our support team, or fill out a contact form. We'll schedule a consultation to understand your needs and provide a detailed proposal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="support-section">
+            <h2>Need More Help?</h2>
+            <p>Can't find what you're looking for? Our support chatbot is here to help!</p>
+            <p>Click the chat icon in the bottom right corner to start a conversation.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 iSystem Development. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div id="chatbot-button" class="chatbot-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </div>
+        
+        <div id="chatbot-window" class="chatbot-window" style="display: none;">
+            <div class="chatbot-header">
+                <h3>Support Chat</h3>
+                <button id="chatbot-close" class="chatbot-close">&times;</button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <p>Hello! I'm here to help. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Type your message...">
+                <button id="chatbot-send" class="chatbot-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>
